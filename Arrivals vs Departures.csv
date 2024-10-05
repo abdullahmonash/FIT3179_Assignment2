@@ -1,6 +1,6 @@
-﻿Category,numberOfPeople
-Permanent Arrivals,100041
-Long-term Arrivals,743941
-Short-term Arrivals,20774804
-Long-term Departures,549659
-Short-term Departures,20849823
+﻿Category,numberOfPeople,status
+Permanent Arrivals,100041,Long-term
+Long-term Arrivals,743941,Long-term
+Short-term Arrivals,20774804,Short-term
+Long-term Departures,549659,Long-term
+Short-term Departures,20849823,Short-term
