@@ -1,0 +1,15 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 250,
+    "height": 200,
+    "data": {
+      "url": "https://raw.githubusercontent.com/abdullahmonash/FIT3179_Assignment2/refs/heads/main/Arrivals%20vs%20Departures.csv"
+      },
+   
+    "mark": {"type": "arc", "innerRadius": 65, "tooltip":true},
+  
+    "encoding": {
+      "column": {"field":"status", "title":"Intended visit type"},
+      "color": { "field": "Category", "type": "nominal"},
+      "theta": { "field": "numberOfPeople", "type": "quantitative", "title":"Percentage of people", "stack":"normalize"}}
+  }

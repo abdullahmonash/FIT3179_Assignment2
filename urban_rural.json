@@ -1,0 +1,16 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": { "text": "Urban vs Rural Population in Australia" },
+    "width": 300,
+    "height": 300,
+    "data": {
+      "url": "https://raw.githubusercontent.com/abdullahmonash/FIT3179_Assignment2/refs/heads/main/Urban%20vs%20Rural.csv"
+      },
+    
+    "mark": {"type": "bar", "tooltip":true},
+    "encoding": {
+      "x": { "field": "State", "type": "nominal"},
+      "y": { "field": "Population", "type": "quantitative", "stack":"normalize", "title":"Percentage of State's population"},
+      "color": {"field": "Geography","scale": {"range": ["#D06A26", "#1567A6"]}}
+      }
+  }

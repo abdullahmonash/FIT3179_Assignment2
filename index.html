@@ -9,16 +9,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/grids-responsive-min.css" />
+    
+    <link rel="stylesheet" href="styles.css">
+    
+
+
     <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
     
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
 
-
     
-    <script src="vega_lite_vis.js"></script>
     
     <title>Abdullah Sabaa FIT3179 - Data Visualisation Assignment 2</title>
     
@@ -26,11 +32,98 @@
 
 <body>
     
-    <h1>Australia's Demographic Over The Years</h1>
-    
-    <div id="bar_chart"> 
+    <h1 id="title">Australia's Demographic Over The Years</h1>
 
+    <div class="part1">
+        <h3>Population Distribution</h3>
+
+
+        <div class='part1_images' id="geographic_map"></div>
+        <p id="part1_text_1">Australia's east coast - New South Wales, Victoria and Queensland were the most densely 
+            populated Australian States in 2019. This means a number of things:<br>
+            1. You are bound to meet various different ethnicities from all over the world in these states<br>
+            2. These states have many tourist attractions to go to and experience<br>
+            3. It is likely these 3 states are the most expensive compared to other states<br>
+            If you're a tourist, it is highly probably you are going to enjoy New South Wales and/or 
+            Victoria. Whereas if you are a family looking to settle, it is likely Western Australia might be most suitbale; where prices may not be 
+            the highest and at the same time you get to enjoy being around a community of both Australians and people of various other cultures.
+        </p>
+
+
+        <div class='part1_images' id="percentage_bar_chart"></div>
+        <p id="part1_text_2">If we look further into the population split - most states' population will be 
+            urban based; namely for access to essentials like healthcare and good quality food. For those who don't mind small communities, then 
+            the Northern Territory or even Tasmania might be best suited for them. On the other hand, if one wants 
+            the freedom to pick between urban or rural without compromising on population density, then Queensland or South 
+            Australia might be more preferred options.
+        </p>
+        
     </div>
+
+    <div class="part2">
+        <h3>Popularity and Crowdedness</h2>
+        <div class="pure-g">
+            <div class="pure-u-1-2">
+                <p>When observing the piecharts on the right, one can infer that tourists come and go as expected (short-term). However a notable
+                    observation is that the proportion of those with long-term/permanent arrivals far exceeds those who are departing long-term.
+                    This suggests that there are relatively more people who want to live in Australia (long-term stays) than those who perhaps might not have enjoyed
+                    it as much (long-term departures); this could indicate Australia's openness to accomodate people of different cultures
+                    and backgrounds regardless of whether they are a family, a student or just about anyone.
+                </p>
+            </div>
+            <div class="pure-u-1-2" id="pie_charts">
+            
+
+            </div>
+
+            <div class="pure-u-1-2">
+                <p>From observing the barchart on the right, one can make two comments - Queensland is the most popular state to emigrate to for those
+                    living in other states, and New South Wales is the least favourite. Using this barchart alongside the first 2 charts, an assumption can be made - people will tend to 
+                    choose New South Wales as the state to live in, however may later find it very expensive or too crowded; and hence why after some time they 
+                    will leave the state. On the contrary, Queensland is garnering the attention of those living in other states. Once again, based on the previous
+                    charts, an assumption can be made - the state is not relatively overpopulated and therefore may not be as expensive as the other states, which could explain
+                    its popularity amongst Australian residents.
+                </p>
+            </div>
+            <div class="pure-u-1-2" id="diverging_bar_chart">
+    
+            </div>
+        </div>
+    </div>
+
+
+    <div class="part3">
+        <h3>How Family-Friendly is Australia?</h2>
+        <p>When observing the left chart below, we can deduce that every decade, Australia's overall average life-expectancy at birth increases by 2 
+            years. The Northern Territory and Tasmania have had the lowest life expectancy across 2 decades, this could be as a result of a potential reduction in 
+            availability to high-quality foods and/or limited healthcare infrastructure. On the other hand, Western 
+            Australia and the Australian Capital Territory have dominated the leaderboard in life-expectancy over the 2 past decades. With a relatively small population in both states, 
+            diseases and infections do not spread easily and therefore the general health of those living in those states may be better than those in other densely populated states. This in-turn 
+            could explain why both of these states have had higher life-expectancy estimates than other states.
+            <br>
+            <br>
+            By a similar token, when observing the chart on the bottom right, the median age of mothers across all Australian states has also seen a 
+            steady and somewhat linear increase over the past 4 decades; where the average age of a mother was roughly 26 in 1980 and 31 in 2020. An 
+            increase in the median age of mothers could potentially be a byproduct of having increased opportunities for early-life education, such as 
+            pursuing research and further study in one's field of work. With increased education opportunities, this may eventually have a positive impact on 
+            families' work and financial stability. Once again, the Australian Capital Territory has had one of the highest median ages of mothers in 
+            the past 4 decades, indicating that this state could be a good candidate for those looking for education or work opportunities whilst 
+            also being able to raise their family.
+        </p>
+        <div class="pure-g">
+            <div class="pure-u-1-2" id="scatterplot"></div>
+            <div class="pure-u-1-2" id="linechart"></div>
+        </div>
+        
+        <h4 class="conclusion" id="conclusion_title">Metadata/Authorship</h4>
+        <p class="conclusion" id="conclusion_text">- Name: Abdullah Sabaa <br>
+            - StudentID: 33119651 <br>
+            - Date Completed: 07/10/2024 <br>
+            - Source: https://www.abs.gov.au/statistics/people/population/historical-population/2021#data-downloads
+        </p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
     
 </html>

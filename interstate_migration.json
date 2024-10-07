@@ -1,0 +1,20 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 550,
+    "height": 200,
+    "title":"NET Interstate Migration for Australia in 2019",
+    "data": {
+      "url": "https://raw.githubusercontent.com/abdullahmonash/FIT3179_Assignment2/refs/heads/main/Interstate%20Migration.csv"
+      },
+   
+    "mark": {"type": "bar", "tooltip":true, "cornerRadius":3},
+  
+    "encoding": {
+      "y": { "field": "State", "type": "nominal", "sort":"-x"},
+      "x": { "field": "netInterstateMigration", "type": "quantitative", "title":"Number of people"},
+      "color": {
+        "condition": {
+          "test": "datum.netInterstateMigration > 0",
+          "value": "green"},
+          "value": "indianred"}}
+  }
