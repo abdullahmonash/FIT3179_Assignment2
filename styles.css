@@ -13,7 +13,14 @@ h3, h4{
     text-decoration: underline;
 }
 
-.part1_images{
+#geographic_map{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+#percentage_bar_chart{
     display: block;
     margin-left: auto;
     margin-right: auto;
