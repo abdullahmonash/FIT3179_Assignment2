@@ -1,7 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": { "text": "Median Age of Mothers in Australia's States" },
-    "width": 400,
+    "width": 560,
+    "height": 300,
     "data": {
       "url": "https://raw.githubusercontent.com/abdullahmonash/FIT3179_Assignment2/refs/heads/main/Median%20age%20of%20mothers%20in%20each%20state%20over%20the%20years.csv"
       },

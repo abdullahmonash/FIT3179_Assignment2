@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": { "text": "Life Expectancy at Birth in Australia's States" },
-    "width": 300,
+    "width": 570,
     "height": 200,
     "data": {
       "url": "https://raw.githubusercontent.com/abdullahmonash/FIT3179_Assignment2/refs/heads/main/Life%20expectancy%20at%20birth.csv"

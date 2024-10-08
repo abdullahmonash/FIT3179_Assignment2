@@ -1,7 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "title": "Population Spread of Australia in 2019",
-    "width": 600,
+    "width": 570,
     "height": 400,
     "projection": {"type": "mercator"},
     "data": {

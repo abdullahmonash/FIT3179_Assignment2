@@ -11,5 +11,5 @@
     "encoding": {
       "column": {"field":"status", "title":"Intended visit type"},
       "color": { "field": "Category", "type": "nominal"},
-      "theta": { "field": "numberOfPeople", "type": "quantitative", "title":"Percentage of people", "stack":"normalize"}}
+      "theta": { "field": "numberOfPeople", "type": "quantitative", "title":"Number of people", "stack":"normalize"}}
   }

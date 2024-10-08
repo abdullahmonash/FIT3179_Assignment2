@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": { "text": "Urban vs Rural Population in Australia" },
-  "width": 300,
-  "height": 300,
+  "width": 530,
+  "height": 290,
   "data": {
     "url": "https://raw.githubusercontent.com/abdullahmonash/FIT3179_Assignment2/refs/heads/main/Urban%20vs%20Rural.csv"
     },
